@@ -17,7 +17,7 @@ String c_name = (String)received.get("c_name");
 String u_phonenum = (String)received.get("u_phonenum");
 String b_name = (String)received.get("b_name");
 Class.forName("com.mysql.jdbc.Driver");
-String DB_URL = "jdbc:mysql://localhost:3306/mydb?useUnicode=true&characterEncoding=utf8"; // 아까 예제에서와 마찬가지로 url을 설정하죠
+String DB_URL = "jdbc:mysql://localhost:3306/hanl?useUnicode=true&characterEncoding=utf8"; // 아까 예제에서와 마찬가지로 url을 설정하죠
 Connection con = DriverManager.getConnection(DB_URL, "root", "1q2w3e4r");
 PreparedStatement pstmt1 = con.prepareStatement("SELECT w_number from waiting where b_number = ?");
 pstmt1.setInt(1,b_number);

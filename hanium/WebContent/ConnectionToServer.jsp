@@ -12,7 +12,7 @@ OutputStream os = null;
 InputStream  is   = null;
 ByteArrayOutputStream baos = null;
 
-URL url = new URL("http://14.63.214.67:10004/hanium/dap.jsp");//접속할 url.*에다가 url을 넣어주시면 됩니다.
+URL url = new URL("http://14.63.214.67:8080/hanium/dap.jsp");//접속할 url.*에다가 url을 넣어주시면 됩니다.
 conn = (HttpURLConnection)url.openConnection(); //connection을 여는 부분입니다.
 
 conn.setConnectTimeout(10000);
